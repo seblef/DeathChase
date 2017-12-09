@@ -1,0 +1,14 @@
+
+material DefaultExplosion_Smoke
+{
+	special_shader StdSprite
+
+	castnoshadows
+	receivenoshadows
+	
+	cull none
+
+	maps 0 Smoke02.bmp -
+
+	blend filter
+}

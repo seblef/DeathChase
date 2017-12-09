@@ -1,0 +1,16 @@
+
+-- Death Chase material
+
+material F16_Exhaust2
+{
+
+	ambient_shader StdAmbient_NoTex
+	sun_shader StdSun_NoTex
+
+
+	diffuse 255 144 138 128
+	specular 255 255 255 255
+	shininess 0.770000
+	emissive 0 0 0 0
+
+}

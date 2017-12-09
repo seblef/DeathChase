@@ -1,0 +1,14 @@
+
+material DefaultExplosion_Splash
+{
+	special_shader StdSprite
+
+	castnoshadows
+	receivenoshadows
+	
+	cull none
+
+	maps 0 water.bmp -
+
+	blend filter
+}

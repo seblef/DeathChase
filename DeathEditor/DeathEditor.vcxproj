@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="EditorDev|Win32">
+      <Configuration>EditorDev</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="EditorRelease|Win32">
+      <Configuration>EditorRelease</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DCBB5718-7052-4FE4-9557-9FB6F819DF79}</ProjectGuid>
+    <RootNamespace>DeathEditor</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EditorRelease|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EditorDev|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='EditorRelease|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='EditorDev|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EditorDev|Win32'">
+    <OutDir>..\DeathEngine\Exec\</OutDir>
+    <IntDir>.\ObjDev\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EditorRelease|Win32'">
+    <OutDir>..\DeathEngine\Exec\</OutDir>
+    <IntDir>.\ObjR\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='EditorDev|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/DDEDEV /DDEEXPORT /wd4996 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040c</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)DeathEditorDev.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences />
+      <EnableCOMDATFolding />
+      <LinkTimeCodeGeneration />
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>DeathEditorDev.exe.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='EditorRelease|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/DDEEXPORT /wd4996 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040c</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)DeathEditor.exe</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>DeathEditor.exe.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="MFC\BtnST.cpp" />
+    <ClCompile Include="..\DeathEngine\Core\BVolumes.cpp" />
+    <ClCompile Include="Console.cpp" />
+    <ClCompile Include="Control.cpp" />
+    <ClCompile Include="MFC\CSplitterWndEx.cpp" />
+    <ClCompile Include="MFC\CStaticView.cpp" />
+    <ClCompile Include="MFC\CTabDlg.cpp" />
+    <ClCompile Include="DeathEditor.cpp" />
+    <ClCompile Include="DeathEditorDoc.cpp" />
+    <ClCompile Include="DeathEditorView.cpp" />
+    <ClCompile Include="Data\EditorSun.cpp" />
+    <ClCompile Include="EnvironmentDlg.cpp" />
+    <ClCompile Include="FileList.cpp" />
+    <ClCompile Include="FileSelectDlg.cpp" />
+    <ClCompile Include="FileSystem.cpp" />
+    <ClCompile Include="HeightmapDlg.cpp" />
+    <ClCompile Include="Data\HeightmapGenerator.cpp" />
+    <ClCompile Include="Interfaces.cpp" />
+    <ClCompile Include="IObject.cpp" />
+    <ClCompile Include="LODDlg.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MapObjectPropDlg.cpp" />
+    <ClCompile Include="MathStatic.cpp" />
+    <ClCompile Include="Memory.cpp" />
+    <ClCompile Include="MeshEditDlg.cpp" />
+    <ClCompile Include="Data\MeshLoader.cpp" />
+    <ClCompile Include="MeshObjPropDlg.cpp" />
+    <ClCompile Include="NewMap.cpp" />
+    <ClCompile Include="ObjectPaneDlg.cpp" />
+    <ClCompile Include="Tools\ObjectTools.cpp" />
+    <ClCompile Include="Data\Selector.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='EditorDev|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='EditorRelease|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Test.cpp" />
+    <ClCompile Include="Data\TexGenerator.cpp" />
+    <ClCompile Include="TextureDlg.cpp" />
+    <ClCompile Include="Tools\ToolManager.cpp" />
+    <ClCompile Include="..\DeathEngine\Core\Transformation.cpp" />
+    <ClCompile Include="Data\TreePlacement.cpp" />
+    <ClCompile Include="TreesDialog.cpp" />
+    <ClCompile Include="Tools\ViewTools.cpp" />
+    <ClCompile Include="WaterDlg.cpp" />
+    <ClCompile Include="WindowMgr.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MFC\BtnST.h" />
+    <ClInclude Include="Console.h" />
+    <ClInclude Include="Control.h" />
+    <ClInclude Include="MFC\CSplitterWndEx.h" />
+    <ClInclude Include="MFC\CStaticView.h" />
+    <ClInclude Include="MFC\CTabDlg.h" />
+    <ClInclude Include="MFC\CUpdateDialog.h" />
+    <ClInclude Include="DeathEditor.h" />
+    <ClInclude Include="DeathEditorDoc.h" />
+    <ClInclude Include="DeathEditorView.h" />
+    <ClInclude Include="Data\EditorSun.h" />
+    <ClInclude Include="EnvironmentDlg.h" />
+    <ClInclude Include="FileList.h" />
+    <ClInclude Include="FileSelectDlg.h" />
+    <ClInclude Include="FileSystem.h" />
+    <ClInclude Include="HeightmapDlg.h" />
+    <ClInclude Include="Data\IEditorObject.h" />
+    <ClInclude Include="Data\IHeightMapGenerator.h" />
+    <ClInclude Include="Interfaces.h" />
+    <ClInclude Include="Tools\ITool.h" />
+    <ClInclude Include="LODDlg.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MapObjectPropDlg.h" />
+    <ClInclude Include="Memory.h" />
+    <ClInclude Include="MeshEditDlg.h" />
+    <ClInclude Include="Data\MeshLoader.h" />
+    <ClInclude Include="MeshObjPropDlg.h" />
+    <ClInclude Include="..\MyWinMessages.h" />
+    <ClInclude Include="NewMap.h" />
+    <ClInclude Include="ObjectPaneDlg.h" />
+    <ClInclude Include="Tools\ObjectTools.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Data\Selector.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Test.h" />
+    <ClInclude Include="Data\TexGenerator.h" />
+    <ClInclude Include="Data\TexGenLevel.h" />
+    <ClInclude Include="TextureDlg.h" />
+    <ClInclude Include="Tools\ToolManager.h" />
+    <ClInclude Include="..\DeathEngine\Core\Transformation.h" />
+    <ClInclude Include="Data\TreePlacement.h" />
+    <ClInclude Include="TreesDialog.h" />
+    <ClInclude Include="Tools\ViewTools.h" />
+    <ClInclude Include="WaterDlg.h" />
+    <ClInclude Include="WindowMgr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Align.cur" />
+    <None Include="res\CamMove.cur" />
+    <None Include="res\CamRotate.cur" />
+    <None Include="res\DeathEditor.rc2" />
+    <None Include="res\Link.cur" />
+    <None Include="res\Rotate.cur" />
+    <None Include="res\Scale.cur" />
+    <None Include="res\Translate.cur" />
+    <None Include="res\Zoom.cur" />
+    <None Include="DeathEditor.reg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\DeathEditor.ico" />
+    <Image Include="res\DeathEditorDoc.ico" />
+    <Image Include="..\DeathEngine\Exec\GUI\Templates\EditorToolBar.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\toolbar1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DeathEditor.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\SDK\Win\WinMM.Lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="DeathEditor.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,14 @@
+
+-- Death Chase material
+
+material Black
+{
+
+	special_shader StdAmbient_NoTex
+
+	diffuse 255 0 0 0
+	specular 255 229 229 229
+	shininess 0.010000
+	emissive 0 0 0 0
+
+}

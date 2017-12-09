@@ -1,0 +1,16 @@
+
+-- id tooltip spritenum push? visible?
+
+1413 "Selection" 1 true false
+1401 "Zoom" 9 true true
+1402 "Déplacer" 11 true true
+1403 "Tourner" 12 true true
+1404 "Centrer" 10 false true
+1405 "Translation" 2 true false
+1406 "Rotation" 3 true false
+1407 "Echelle" 4 true false
+1410 "Verrou sur X" 5 true false
+1411 "Verrou sur Y" 6 true false
+1412 "Verrou sur Z" 7 true false
+1408 "Aligner" 8 true false
+1409 "Lier" 0 true false

@@ -1,0 +1,18 @@
+dialog 10 10 600 400 Console
+{
+
+  button 565 375 30 20
+  {
+    id 102
+    tooltip "Effacer la console"
+    text "Effacer"
+  }
+
+  editbox 5 375 365 20
+  {
+    id 103
+    tooltip "Tapez votre commande ici"
+    text "> ?"
+  }
+
+}

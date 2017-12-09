@@ -1,0 +1,20 @@
+
+material DefaultExplosion
+{
+	special_shader StdSprite
+
+	castnoshadows
+	receivenoshadows
+	animated
+
+	cull none
+
+	maps 0 Textures\exp00_1.bmp Textures\exp00_2.bmp Textures\exp00_3.bmp
+		Textures\exp00_4.bmp Textures\exp00_5.bmp Textures\exp00_6.bmp
+		Textures\exp00_7.bmp Textures\exp00_8.bmp Textures\exp00_9.bmp
+		Textures\exp00_10.bmp - 1.0
+
+	blend filter
+
+}
+

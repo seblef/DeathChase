@@ -1,0 +1,69 @@
+
+system DefaultExplosionSmoke
+{
+	emitter Smoke
+	renderer Quad
+	{
+		material DefaultExplosion_Smoke.dmat
+		size 3.0
+	}
+
+	life_range 1.0 2.0
+	mass_range 0.2 0.5
+	friction_range 0.01 0.02
+	velocity_range -0.5 0.0 -0.5    0.5 2.0 0.5
+	start_color_range 255.0 255.0 255.0 255.0    200.0 200.0 200.0 200.0
+	end_color_range 10.0 10.0 10.0 10.0    0.0 0.0 0.0 0.0
+	start_size_range 3.0 6.0
+	end_size_range 6.0 9.0
+	gravity 0.0 1000.0 0.0
+
+	particles_count	10
+	emit_speed 5.0
+}
+
+system DefaultExplosionDebris
+{
+	emitter Explosion
+	renderer Mesh
+	{
+		mesh DefaultExplosion_Debris.dgeo
+		size 1.0
+	}
+
+	life_range 1.0 2.0
+	mass_range 2.0 5.0
+	friction_range 0.01 0.02
+	velocity_range 0.0 0.0 0.0    0.0 0.0 0.0
+	start_color_range 255.0 255.0 255.0 255.0    200.0 200.0 200.0 200.0
+	end_color_range 0.0 255.0 255.0 255.0    10.0 200.0 200.0 200.0
+	start_size_range 1.0 2.0
+	end_size_range 0.00001 0.1
+	gravity 0.0 -400.0 0.0
+
+	particles_count 10
+	emit_once
+}
+
+system DefaultExplosionSplash
+{
+	emitter Spray
+	renderer Quad
+	{
+		material DefaultExplosion_Splash.dmat
+		size 1.0
+	}
+
+	life_range 1.0 2.0
+	mass_range 2.0 5.0
+	friction_range 0.03 0.06
+	velocity_range 0.0 0.0 0.0    0.0 0.0 0.0
+	start_color_range 128.0 230.0 230.0 230.0   180.0 255.0 255.0 255.0
+	end_color_range 128.0 230.0 230.0 230.0   180.0 255.0 255.0 255.0
+	start_size_range 0.2 0.25
+	end_size_range 0.3 0.4
+	gravity 0.0 -400.0 0.0
+
+	particles_count 50
+	emit_once
+}

@@ -1,0 +1,53 @@
+dialog 30 30 600 400 Memoire
+{
+
+  button 555 375 40 20
+  {
+    id 202
+
+    text "Rafraichir"
+  }
+
+  --      Controle allocateurs
+  
+  listbox 10 45 150 320
+  {
+    id 203
+  }
+
+  statictext 165 45 70 20
+  {
+    id 204
+
+    text "Utilises:"
+  }
+
+  statictext 165 70 70 20
+  {
+    id 205
+
+    text "Libres:"
+  }
+
+  statictext 165 95 70 20
+  {
+    id 206
+
+    text "Total:"
+  }
+
+  --       Controle general
+
+  tab 5 20 590 350
+  {
+    id 201
+
+    tabs
+    {
+      "Allocateurs"
+      "General"
+    }
+  }
+
+
+}

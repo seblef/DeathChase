@@ -1,0 +1,14 @@
+
+explosion DefaultExplosion
+{
+	life_time 1.0
+	count 1
+	
+	material DefaultExplosion.dmat
+	sound explosion.wav
+
+	debris_system DefaultExplosionDebris
+	smoke_system DefaultExplosionSmoke
+	splash_system DefaultExplosionSplash
+
+}

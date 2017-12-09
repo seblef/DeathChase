@@ -1,0 +1,42 @@
+
+3DDarkShadow      200  50  50  50
+3DShadow          200 130 130 130
+3DFace	          200 210 210 210
+3DHighlight       255 255 255 255
+3DLight           200 210 210 210
+ActiveBorder      200  16  14 115
+ActiveCaption     200 255 255 255
+AppWorkspace      200 100 100 100
+ButtonText        240  10  10  10
+GrayText          240 130 130 130
+Highlight         200   8  36 107
+HighlightText     240 255 255 255
+InactiveBorder	  200 165 165 165
+InactiveCaption   200 210 210 210
+ToolTip		  200   0   0   0
+ToolTipBackground 200 255 255 255
+ScrollBar	  200 230 230 230
+Window		  200 255 255 255
+WindowSymbol	  200  10  10  10
+Icon		  200 255 255 255
+IconHighlight	  200   8  36 107
+
+ScrollBarSize	  14
+MenuHeight	  30
+WindowButtonWidth 15
+CheckBoxWidth     18
+MessageBoxWidth   500
+MessageBoxHeight  200
+ButtonWidth	  80
+ButtonHeight	  20
+TextDistanceX	  2
+TextDistanceY	  0
+
+MessageBoxOkay	  OK
+MessageBoxCancel  Annuler
+MessageBoxYes	  Oui
+MessageBoxNo	  Non
+WindowButtonClose Fermer
+WindowButtonMaximize Maximiser
+WindowButtonMinimize Minimiser
+WindowButtonRestore  Restaurer

@@ -1,0 +1,16 @@
+
+-- Death Chase material
+
+material Boite2
+{
+
+	ambient_shader StdAmbient_NoTex
+	sun_shader StdSun_NoTex
+
+
+	diffuse 255 0 255 0
+	specular 255 229 229 229
+	shininess 0.100000
+	emissive 255 0 0 0
+
+}

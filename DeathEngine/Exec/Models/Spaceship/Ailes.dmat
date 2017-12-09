@@ -1,0 +1,17 @@
+
+-- Death Chase material
+
+material Ailes
+{
+	
+	ambient_shader StdAmbient_Tex
+	sun_shader StdSun_Tex
+
+	maps 0 028METAL.JPG - 
+
+	diffuse 255 255 255 255
+	specular 255 229 229 229
+	shininess 0.100000
+	emissive 255 0 0 0
+
+}

@@ -1,0 +1,936 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Français (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+    "LANGUAGE 12, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\DeathEditor.rc2""  // ressources non modifiées par Microsoft Visual C++\r\n"
+    "#include ""afxres.rc""         // Composants standard\r\n"
+    "#include ""afxprint.rc""       // ressources impression/aperçu avant impression\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\DeathEditor.ico"
+IDR_DeathChaseMapTYPE   ICON                    "res\\DeathEditorDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "E",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "P",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040c04e4"
+        BEGIN
+            VALUE "CompanyName", "Koyot Games"
+            VALUE "FileDescription", "Editeur de map pour Death Chase"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "DeathEditor.exe"
+            VALUE "OriginalFilename", "DeathEditor.exe"
+            VALUE "ProductName", "Death Chase Editor"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CONTROL, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 256
+    END
+
+    IDD_NEWMAP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+
+    IDD_CONSOLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 435
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 278
+    END
+
+    IDD_MEMORY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 526
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 244
+    END
+
+    IDD_TREES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_HEIGHTMAPDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_TEXTUREDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_ENVIRONMENTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 297
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_WATERDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 262
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_MESHEDITDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 362
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_FILESELECTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 266
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 252
+    END
+
+    IDD_LODEDITDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_OBJECTS_PANE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 345
+    END
+
+    IDD_MOBJECT_PROPDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+    END
+
+    IDD_MESHOBJ_PROPDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONTROL DIALOGEX 0, 0, 180, 437
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_CONTROLTAB,"SysTabControl32",0x0,0,0,179,436
+END
+
+IDD_NEWMAP DIALOGEX 0, 0, 186, 72
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Nouvelle map"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Nom:",IDC_STATIC,7,9,18,8
+    EDITTEXT        IDC_NEWMAPNAME,27,7,152,14,ES_AUTOHSCROLL
+    LTEXT           "Taille:",IDC_STATIC,7,28,20,8
+    COMBOBOX        IDC_NEWMAPSIZE,30,25,96,72,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Suivant >",IDC_NEWMAP_NEXT,129,51,50,14
+    PUSHBUTTON      "Annuler",IDC_NEWMAP_CANCEL,67,51,50,14
+END
+
+IDD_CONSOLE DIALOGEX 0, 0, 442, 286
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Console"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_CONSOLELIST,7,7,428,254,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Effacer",IDC_CONSOLECLEAR,385,264,50,14
+END
+
+IDD_MEMORY DIALOGEX 0, 0, 533, 251
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Mémoire"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Rafraichir",IDC_MEMREFRESH,476,230,50,14
+    CONTROL         "",IDC_MEMTAB,"SysTabControl32",0x0,7,7,519,219
+    LISTBOX         IDC_ALLOCLIST,15,24,113,196,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Utilisés:",IDC_ALLOCUSED,135,35,104,10,0,WS_EX_CLIENTEDGE
+    LTEXT           "Libres:",IDC_ALLOCFREE,135,49,104,10,0,WS_EX_CLIENTEDGE
+    LTEXT           "Total:",IDC_ALLOCTOTAL,135,63,104,11,0,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_MEMLIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,15,24,501,197
+END
+
+IDD_TREES DIALOGEX 0, 0, 279, 221
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Arbres"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREEPREVIEW,"Static",SS_BLACKFRAME | SS_NOTIFY,130,7,141,138
+    PUSHBUTTON      "Importer",IDC_TREEIMPORT,130,151,50,14
+    PUSHBUTTON      "Appliquer",IDC_TREEAPPLY,221,171,50,14
+    LTEXT           "Densité:",IDC_STATIC,136,173,28,8
+    EDITTEXT        IDC_TREEDENSITYEB,168,171,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_TREEDENSITYSB,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,207,170,11,14
+    LISTBOX         IDC_TREELIST,7,7,114,138,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Hauteur min:",IDC_STATIC,7,148,42,8
+    EDITTEXT        IDC_TREEMINEB,51,146,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_TREEMINSB,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,91,146,11,14
+    LTEXT           "Hauteur max:",IDC_STATIC,8,168,45,8
+    EDITTEXT        IDC_TREEMAXEB,52,165,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_TREEMAXSB,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,92,165,11,14
+    RTEXT           "Echelle:",IDC_STATIC,7,185,41,8
+    EDITTEXT        IDC_TREESCALEEB,52,183,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_TREESCALESB,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,92,183,11,14
+    CONTROL         "Sélectionné",IDC_TREESELECTCK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,203,89,10
+    PUSHBUTTON      "Terminer",IDC_TREES_NEXT,222,200,50,14
+    PUSHBUTTON      "< Précédent",IDC_TREES_PREV,159,200,50,14
+END
+
+IDD_HEIGHTMAPDLG DIALOGEX 0, 0, 278, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Heightmap"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Suivant >",IDC_HGT_NEXT,221,159,50,14
+    PUSHBUTTON      "< Précédent",IDC_HGT_PREV,161,159,50,14
+    CONTROL         "",IDC_HGT_PREVIEW,"Static",SS_BLACKFRAME,137,7,134,128
+    CONTROL         "Générer",IDC_HGT_GENERATECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,110,10
+    PUSHBUTTON      "<Heightmap>",IDC_HGT_FILEBTN,7,21,116,14
+    COMBOBOX        IDC_HGT_GENTYPECB,7,39,115,97,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_HGT_PARAM1EB,70,58,40,14,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    CONTROL         "",IDC_HGT_PARAM1SB,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | WS_DISABLED,110,58,10,14
+    EDITTEXT        IDC_HGT_PARAM2EB,70,72,40,14,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    CONTROL         "",IDC_HGT_PARAM2SB,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | WS_DISABLED,110,72,11,14
+    EDITTEXT        IDC_HGT_PARAM3EB,70,87,40,14,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    CONTROL         "",IDC_HGT_PARAM3SB,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | WS_DISABLED,110,87,11,14
+    EDITTEXT        IDC_HGT_PARAM4EB,70,101,40,14,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    CONTROL         "",IDC_HGT_PARAM4SB,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | WS_DISABLED,110,101,11,14
+    EDITTEXT        IDC_HGT_PARAM5EB,70,116,40,14,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    CONTROL         "",IDC_HGT_PARAM5SB,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | WS_DISABLED,110,116,11,14
+    PUSHBUTTON      "Générer",IDC_HGT_GENERATEBTN,6,139,124,14,WS_DISABLED
+    PUSHBUTTON      "Lisser",IDC_HGT_SMOOTHBTN,6,159,124,14
+    EDITTEXT        IDC_HGT_SCALEEB,179,139,36,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_HGT_SCALESB,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,215,139,11,14
+    PUSHBUTTON      "OK",IDC_HGT_SCALEBTN,231,139,21,14
+    LTEXT           "Echelle:",IDC_STATIC,151,141,26,8
+    RTEXT           "Static",IDC_HGT_PARAM1ST,8,59,55,8
+    RTEXT           "Static",IDC_HGT_PARAM2ST,8,74,55,8
+    RTEXT           "Static",IDC_HGT_PARAM3ST,8,90,55,8
+    RTEXT           "Static",IDC_HGT_PARAM4ST,8,104,55,8
+    RTEXT           "Static",IDC_HGT_PARAM5ST,8,119,55,8
+END
+
+IDD_TEXTUREDLG DIALOGEX 0, 0, 294, 218
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Texture"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Générer",IDC_TEX_GENERATECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,7,42,10
+    PUSHBUTTON      "<Texture>",IDC_TEX_FILEBTN,7,20,115,14
+    COMBOBOX        IDC_TEX_SIZECB,7,39,115,120,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_TEX_TEXLIST,7,55,115,60,LBS_NOINTEGRALHEIGHT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Ajouter",IDC_TEX_ADDBTN,7,121,50,14,WS_DISABLED
+    PUSHBUTTON      "Supprimer",IDC_TEX_REMBTN,72,121,50,14,WS_DISABLED
+    LTEXT           "Min:",IDC_TMINST,30,143,14,8
+    EDITTEXT        IDC_TEX_MINEB,46,142,40,14,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    CONTROL         "",IDC_TEX_MINSB,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | WS_DISABLED,87,142,11,14
+    LTEXT           "Max:",IDC_TMAXST,30,159,17,8
+    EDITTEXT        IDC_TEX_MAXEB,46,158,40,14,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    CONTROL         "",IDC_TEX_MAXSB,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | WS_DISABLED,87,158,11,14
+    PUSHBUTTON      "<Texture>",IDC_TEX_TEXBTN,7,175,115,14,WS_DISABLED
+    PUSHBUTTON      "Générer",IDC_TEX_GENERATEBTN,7,196,115,14,WS_DISABLED
+    CONTROL         "",IDC_TEX_PREVIEW,"Static",SS_BLACKFRAME | SS_NOTIFY | WS_BORDER,132,7,155,134
+    PUSHBUTTON      "<Detail>",IDC_TEX_DETAILBTN,151,148,115,14
+    PUSHBUTTON      "Suivant >",IDC_TEX_NEXTBTN,237,197,50,14
+    PUSHBUTTON      "< Précédent",IDC_TEX_PREVBTN,178,197,50,14
+END
+
+IDD_ENVIRONMENTDLG DIALOGEX 0, 0, 304, 262
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Environnement"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "SkyBox",IDC_STATIC,7,7,145,100
+    LISTBOX         IDC_ENV_SKYLIST,15,18,130,64,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "<Texture>",IDC_ENV_SKYTEXBTN,15,86,130,14,WS_DISABLED
+    GROUPBOX        "Météo",IDC_STATIC,7,107,145,74
+    COMBOBOX        IDC_ENV_WEATHER_TYPECB,16,118,127,105,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Densité:",IDC_WPARTST,37,139,28,8
+    EDITTEXT        IDC_ENV_WEATHER_DENSITYEB,65,137,40,14,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    CONTROL         "",IDC_ENV_WEATHER_DENSITYSB,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | WS_DISABLED,105,137,11,14
+    PUSHBUTTON      "<Texture>",IDC_ENV_WEATHER_TEXBTN,15,157,130,14,WS_DISABLED
+    GROUPBOX        "Soleil",IDC_STATIC,7,182,145,72
+    LTEXT           "Couleur (pour éclairage):",IDC_SUNCOLORST,33,218,81,8
+    PUSHBUTTON      "",IDC_ENV_SUN_COLORBTN,117,215,22,14
+    PUSHBUTTON      "<Texture>",IDC_ENV_SUN_TEXBTN,15,194,130,14
+    CONTROL         "",IDC_ENV_PREVIEW,"Static",SS_BLACKFRAME,159,7,138,128
+    CONTROL         "Générer arbres",IDC_ENV_GENERATETREESCK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,175,219,104,10
+    PUSHBUTTON      "Terminer",IDC_ENV_NEXTBTN,247,241,50,14
+    PUSHBUTTON      "< Précédent",IDC_ENV_PREVBTN,183,241,50,14
+    CONTROL         "Générer de l'eau",IDC_ENV_GENERATEWATERCK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,175,203,104,10
+    GROUPBOX        "Limites",IDC_STATIC,160,140,137,58
+    PUSHBUTTON      "<Texture>",IDC_ENV_SHIELD_TEXBTN,168,153,121,14
+    LTEXT           "Distance de visibilité:",IDC_STATIC,170,176,68,8
+    EDITTEXT        IDC_ENV_SHIELD_DISTEB,238,174,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_ENV_SHIELD_DISTSB,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,275,174,11,14
+    LTEXT           "Lumière ambiente:",IDC_SUNCOLORST2,54,236,60,8
+    PUSHBUTTON      "",IDC_ENV_AMBIENTBTN,117,233,22,14
+END
+
+IDD_WATERDLG DIALOGEX 0, 0, 269, 135
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Eau"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "<Texture>",IDC_WATER_TEXTUREBTN,7,7,114,14
+    LTEXT           "Niveau:",IDC_STATIC,24,29,26,8
+    EDITTEXT        IDC_WATER_HEIGHTEB,51,26,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_WATER_HEIGHTSB,"msctls_updown32",UDS_ARROWKEYS,90,25,11,14
+    CONTROL         "Entourer la map d'eau",IDC_WATER_SURROUNDCK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,46,86,10
+    PUSHBUTTON      "Appliquer",IDC_WATER_APPLYBTN,7,63,114,14
+    CONTROL         "",IDC_WATER_PREVIEW,"Static",SS_BLACKFRAME,132,7,130,120
+    PUSHBUTTON      "Terminer",IDC_WATER_NEXT,73,113,50,14
+    PUSHBUTTON      "< Précédent",IDC_WATER_PREV,7,113,50,14
+END
+
+IDD_MESHEDITDLG DIALOGEX 0, 0, 369, 225
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edition de Mesh"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,312,186,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,312,204,50,14
+    GROUPBOX        "Géométrie",IDC_STATIC,7,7,154,117
+    COMBOBOX        IDC_MEDIT_MESHSELECTCB,17,19,131,134,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "N'importer que cet objet",IDC_MEDIT_MULTISELECTRD,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,19,41,118,10
+    CONTROL         "Combiner tous les objets en un seul",IDC_MEDIT_MULTISELECTRD2,
+                    "Button",BS_AUTORADIOBUTTON,19,69,128,10
+    CONTROL         "Utiliser les autres objets comme LODs",IDC_MEDIT_MULTISELECTRD3,
+                    "Button",BS_AUTORADIOBUTTON,19,86,133,10
+    EDITTEXT        IDC_MEDIT_LODDISTEB,77,103,40,14,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    LTEXT           "Distance :",IDC_STATIC,38,105,33,8
+    GROUPBOX        "Matériaux",IDC_STATIC,7,126,153,51
+    COMBOBOX        IDC_MEDIT_MATSELECTCB,17,136,131,134,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Editer",IDC_MEDIT_EDITMATBTN,18,157,51,14
+    CONTROL         "",IDC_MEDITPREVIEW,"Static",SS_BLACKFRAME,168,7,194,176
+    LTEXT           "Nom:",IDC_STATIC,172,189,19,8
+    EDITTEXT        IDC_MEDIT_NAME,192,187,113,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Importer",IDC_MEDIT_IMPORTMATBTN,94,157,51,14
+    CONTROL         "Importer l'animation",IDC_MEDIT_ANIMCK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,186,79,10
+    CONTROL         "Gérer les LODs maintenant",IDC_MEDIT_LODCK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,203,101,10
+    CONTROL         "Centrer",IDC_MEDIT_CENTERCK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,35,55,41,10
+END
+
+IDD_FILESELECTDLG DIALOGEX 0, 0, 273, 259
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Selection"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,216,7,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,216,24,50,14
+    CONTROL         "",IDC_FILE_TREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | WS_BORDER | WS_TABSTOP,7,7,200,225
+    PUSHBUTTON      "Nouveau",IDC_FILE_NEW,7,238,50,14
+    PUSHBUTTON      "Importer",IDC_FILE_IMPORT,65,238,50,14
+    PUSHBUTTON      "Rafraichir",IDC_FILE_REFRESH,216,217,50,14
+    PUSHBUTTON      "Editer",IDC_FILE_EDITBTN,158,238,50,14
+END
+
+IDD_LODEDITDLG DIALOGEX 0, 0, 289, 162
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LODs"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,79,141,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,13,141,50,14
+    COMBOBOX        IDC_LOD_SELECTCB,7,7,128,98,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Nouveau",IDC_LOD_NEWBTN,7,28,50,14
+    PUSHBUTTON      "Supprimer",IDC_LOD_REMBTN,46,51,50,14
+    LTEXT           "Distance max:",IDC_STATIC,26,74,46,8
+    EDITTEXT        IDC_LOD_DISTEB,73,72,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Matériaux",IDC_STATIC,7,85,127,52
+    COMBOBOX        IDC_LOD_MATCB,13,97,116,76,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Editer",IDC_LOD_MATEDITBTN,13,117,50,14
+    PUSHBUTTON      "Importer",IDC_LOD_MATIMPORTBTN,79,117,50,14
+    CONTROL         "",IDC_LOD_PREVIEW,"Static",SS_BLACKFRAME,143,7,139,148
+    PUSHBUTTON      "Importer",IDC_LOD_IMPORT,83,29,50,14
+END
+
+IDD_OBJECTS_PANE DIALOGEX 0, 0, 180, 352
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_OBJ_TREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | WS_BORDER | WS_TABSTOP,7,7,166,338
+END
+
+IDD_MOBJECT_PROPDLG DIALOGEX 0, 0, 180, 75
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Propriétés"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,123,54,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,123,34,50,14
+    CONTROL         "Produit des ombres",IDC_MOBJ_CASTSHADOWS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,77,10
+    CONTROL         "Recoit les ombres",IDC_MOBJ_RECSHADOWS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,22,72,10
+    CONTROL         "Collisions",IDC_MOBJ_COLLIDE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,38,45,10
+    LTEXT           "Nom:",IDC_STATIC,7,56,18,8
+    EDITTEXT        IDC_MOBJ_NAME,27,54,80,14,ES_AUTOHSCROLL
+END
+
+IDD_MESHOBJ_PROPDLG DIALOGEX 0, 0, 186, 194
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Propriétés"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,156,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,129,174,50,14
+    GROUPBOX        "Général",IDC_STATIC,7,7,112,82
+    CONTROL         "Produit des ombres",IDC_MESHOBJ_CASTSHADOWS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,19,77,10
+    CONTROL         "Recoit les ombres",IDC_MESHOBJ_RECSHADOWS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,34,72,10
+    CONTROL         "Collisions",IDC_MESHOBJ_COLLIDE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,50,45,10
+    LTEXT           "Nom:",IDC_STATIC,14,68,18,8
+    EDITTEXT        IDC_MESHOBJ_NAME,34,66,80,14,ES_AUTOHSCROLL
+    GROUPBOX        "Animation",IDC_STATIC,7,93,111,94
+    CONTROL         "Animer",IDC_MESHOBJ_ANIM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,106,38,10
+    LTEXT           "Axe:",IDC_STATIC,15,120,16,8
+    CONTROL         "X",IDC_MESHOBJ_AXEX,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,33,120,20,10
+    CONTROL         "Y",IDC_MESHOBJ_AXEY,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,33,134,20,10
+    CONTROL         "Z",IDC_MESHOBJ_AXEZ,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,33,148,20,10
+    LTEXT           "Vitesse:",IDC_STATIC,14,165,26,8
+    EDITTEXT        IDC_MESHOBJ_SPEED,42,163,47,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",IDC_MESHOBJ_SPEEDSB,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | WS_DISABLED,87,163,11,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "Fichier"
+    BEGIN
+        POPUP "Nouveau"
+        BEGIN
+            MENUITEM "Map",                         ID_NEWMAP
+        END
+        POPUP "Ouvrir"
+        BEGIN
+            MENUITEM "Map",                         ID_OPENMAP
+        END
+        MENUITEM "Sauvegarder",                 ID_SAVE
+        MENUITEM "Quitter",                     ID_QUIT
+    END
+    POPUP "Vue"
+    BEGIN
+        MENUITEM "Perspective",                 ID_VUE_PERSPECTIVE, CHECKED
+        MENUITEM "Dessus",                      ID_VUE_DESSUS, CHECKED
+        MENUITEM "Dessous",                     ID_VUE_DESSOUS, CHECKED
+        MENUITEM "Face",                        ID_VUE_FACE, CHECKED
+        MENUITEM "Arrière",                     ID_VUE_ARRIERE, CHECKED
+        MENUITEM "Gauche",                      ID_VUE_GAUCHE, CHECKED
+        MENUITEM "Droite",                      ID_VUE_DROITE, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "Centrer",                     ID_VUE_CENTRER
+        MENUITEM SEPARATOR
+        MENUITEM "Zoom",                        ID_VUE_ZOOM, CHECKED
+        MENUITEM "Tourner",                     ID_VUE_TOURNER, CHECKED
+        MENUITEM "Déplacer",                    ID_VUE_DEPLACER, CHECKED
+        MENUITEM "Profondeur",                  ID_VUE_PROFONDEUR, CHECKED
+    END
+    POPUP "Outils"
+    BEGIN
+        MENUITEM "Selection",                   ID_OUTILS_SELECTION, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "Déplacer",                    ID_OUTILS_DEPLACER, CHECKED
+        MENUITEM "Tourner",                     ID_OUTILS_TOURNER, CHECKED
+        MENUITEM "Echelle",                     ID_OUTILS_ECHELLE, CHECKED
+        MENUITEM "Lier",                        ID_OUTILS_LIER
+        MENUITEM "Aligner",                     ID_OUTILS_ALIGNER
+        MENUITEM SEPARATOR
+        MENUITEM "Verrouiller sur X",           ID_OUTILS_VERROUILLERSURX, CHECKED
+        MENUITEM "Verrouiller sur Y",           ID_OUTILS_VERROUILLERSURY, CHECKED
+        MENUITEM "Verrouiller sur Z",           ID_OUTILS_VERROUILLERSURZ, CHECKED
+        MENUITEM SEPARATOR
+        POPUP "Créer"
+        BEGIN
+            MENUITEM "Objet de terrain",            ID_CREER_MAPOBJECT
+        END
+    END
+    POPUP "Test"
+    BEGIN
+        MENUITEM "Tester",                      ID_TEST_TESTER
+    END
+    POPUP "Dev"
+    BEGIN
+        MENUITEM "Console",                     ID_DEV_CONSOLE
+        MENUITEM "Memoire",                     ID_DEV_MEMOIRE
+    END
+END
+
+IDR_VIEWCONTEXT MENU 
+BEGIN
+    POPUP " "
+    BEGIN
+        POPUP "Vue"
+        BEGIN
+            MENUITEM "Perspective",                 ID_VUE_PERSPECTIVE
+            MENUITEM "Dessus",                      ID_VUE_DESSUS
+            MENUITEM "Dessous",                     ID_VUE_DESSOUS
+            MENUITEM "Face",                        ID_VUE_FACE
+            MENUITEM "Arrière",                     ID_VUE_ARRIERE
+            MENUITEM "Gauche",                      ID_VUE_GAUCHE
+            MENUITEM "Droite",                      ID_VUE_DROITE
+            MENUITEM SEPARATOR
+            MENUITEM "Centrer",                     ID_VUE_CENTER
+            MENUITEM SEPARATOR
+            MENUITEM "Zoom",                        ID_VUE_ZOOM
+            MENUITEM "Tourner",                     ID_VUE_TOURNER
+            MENUITEM "Déplacer",                    ID_VUE_DEPLACER
+            MENUITEM "Profondeur",                  ID_VUE_PROFONDEUR
+        END
+        POPUP "Outils"
+        BEGIN
+            MENUITEM "Selection",                   ID_OUTILS_SELECTION
+            MENUITEM SEPARATOR
+            MENUITEM "Déplacer",                    ID_OUTILS_DEPLACER
+            MENUITEM "Tourner",                     ID_OUTILS_TOURNER
+            MENUITEM "Echelle",                     ID_OUTILS_ECHELLE
+            MENUITEM "Lier",                        ID_OUTILS_LIER
+            MENUITEM "Aligner",                     ID_OUTILS_ALIGNER
+            MENUITEM SEPARATOR
+            MENUITEM "Verrouiller sur X",           ID_OUTILS_VERROUILLERSURX
+            MENUITEM "Verrouiller sur Y",           ID_OUTILS_VERROUILLERSURY
+            MENUITEM "Verrouiller sur Z",           ID_OUTILS_VERROUILLERSURZ
+        END
+        POPUP "Options"
+        BEGIN
+            MENUITEM "Eclairage",                   ID_OPTIONS_ECLAIRAGE
+            MENUITEM "Ombres",                      ID_OPTIONS_OMBRES
+        END
+        MENUITEM SEPARATOR
+        POPUP "Créer"
+        BEGIN
+            MENUITEM "Objet de terrain",            ID_CREER_MAPOBJECT
+            MENUITEM "Objet",                       ID_CREER_OBJET
+        END
+    END
+END
+
+IDR_OBJCONTEXT MENU 
+BEGIN
+    POPUP " "
+    BEGIN
+        MENUITEM "Propriétés",                  ID_OBJ_PROP
+        MENUITEM SEPARATOR
+        MENUITEM "Copier",                      ID_OBJ_COPY
+        MENUITEM "Coller",                      ID_OBJ_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Supprimer",                   ID_OBJ_REMOVE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_NEWMAP DLGINIT
+BEGIN
+    IDC_NEWMAPSIZE, 0x403, 8, 0
+0x3532, 0x7836, 0x3532, 0x0036, 
+    IDC_NEWMAPSIZE, 0x403, 8, 0
+0x3135, 0x7832, 0x3135, 0x0032, 
+    IDC_NEWMAPSIZE, 0x403, 10, 0
+0x3031, 0x3432, 0x3178, 0x3230, 0x0034, 
+    IDC_NEWMAPSIZE, 0x403, 10, 0
+0x3032, 0x3834, 0x3278, 0x3430, 0x0038, 
+    0
+END
+
+IDD_HEIGHTMAPDLG DLGINIT
+BEGIN
+    IDC_HGT_GENTYPECB, 0x403, 7, 0
+0x6550, 0x6c72, 0x6e69, "\000" 
+    IDC_HGT_GENTYPECB, 0x403, 10, 0
+0x694d, 0x2064, 0x6f50, 0x6e69, 0x0074, 
+    IDC_HGT_GENTYPECB, 0x403, 16, 0
+0x6146, 0x6c75, 0x2074, 0x6f46, 0x6d72, 0x7461, 0x6f69, 0x006e, 
+    0
+END
+
+IDD_TEXTUREDLG DLGINIT
+BEGIN
+    IDC_TEX_SIZECB, 0x403, 8, 0
+0x3532, 0x7836, 0x3532, 0x0036, 
+    IDC_TEX_SIZECB, 0x403, 8, 0
+0x3135, 0x7832, 0x3135, 0x0032, 
+    IDC_TEX_SIZECB, 0x403, 10, 0
+0x3031, 0x3432, 0x3178, 0x3230, 0x0034, 
+    IDC_TEX_SIZECB, 0x403, 10, 0
+0x3032, 0x3834, 0x3278, 0x3430, 0x0038, 
+    0
+END
+
+IDD_ENVIRONMENTDLG DLGINIT
+BEGIN
+    IDC_ENV_WEATHER_TYPECB, 0x403, 11, 0
+0x6e45, 0x6f73, 0x656c, 0x6c69, 0xe96c, "\000" 
+    IDC_ENV_WEATHER_TYPECB, 0x403, 8, 0
+0x754e, 0x6761, 0x7565, 0x0078, 
+    IDC_ENV_WEATHER_TYPECB, 0x403, 6, 0
+0x6c50, 0x6975, 0x0065, 
+    IDC_ENV_WEATHER_TYPECB, 0x403, 6, 0
+0x654e, 0x6769, 0x0065, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINTOOLBAR TOOLBAR  24, 24
+BEGIN
+    BUTTON      ID_OUTILS_SELECTION
+    SEPARATOR
+    BUTTON      ID_VUE_ZOOM
+    BUTTON      ID_VUE_DEPLACER
+    BUTTON      ID_VUE_TOURNER
+    BUTTON      ID_VUE_PROFONDEUR
+    BUTTON      ID_VUE_CENTRER
+    SEPARATOR
+    BUTTON      ID_OUTILS_DEPLACER
+    BUTTON      ID_OUTILS_TOURNER
+    BUTTON      ID_OUTILS_ECHELLE
+    SEPARATOR
+    BUTTON      ID_OUTILS_VERROUILLERSURX
+    BUTTON      ID_OUTILS_VERROUILLERSURY
+    BUTTON      ID_OUTILS_VERROUILLERSURZ
+    SEPARATOR
+    BUTTON      ID_OUTILS_LIER
+    BUTTON      ID_OUTILS_ALIGNER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINTOOLBAR         BITMAP                  "res\\toolbar1.bmp"
+IDB_TREELIST            BITMAP                  "res\\bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_ZOOMCUR             CURSOR                  "res\\Zoom.cur"
+IDC_ALIGNCUR            CURSOR                  "res\\Align.cur"
+IDC_CAMMOVECUR          CURSOR                  "res\\CamMove.cur"
+IDC_CAMROTATECUR        CURSOR                  "res\\CamRotate.cur"
+IDC_LINKCUR             CURSOR                  "res\\Link.cur"
+IDC_ROTATEECUR          CURSOR                  "res\\Rotate.cur"
+IDC_SCALECUR            CURSOR                  "res\\Scale.cur"
+IDC_TRANSLATECUR        CURSOR                  "res\\Translate.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "Échec de l'initialisation d'OLE. Assurez-vous que vous utilisez la bonne version des bibliothèques OLE."
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Death Editor\n\nmap\nDeathChase Maps (*.dmap)\n.dmap\nDeathChase.Map\nDeathChase.Map"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "DeathEditor"
+    AFX_IDS_IDLEMESSAGE     "Prêt"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "RFP"
+    ID_INDICATOR_REC        "ENR"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Crée un nouveau document\nNouveau"
+    ID_FILE_OPEN            "Ouvre un document existant\nOuvrir"
+    ID_FILE_CLOSE           "Ferme le document actif\nFermer"
+    ID_FILE_SAVE            "Enregistre le document actif\nEnregistrer"
+    ID_FILE_SAVE_AS         "Enregistre le document actif sous un nouveau nom\nEnregistrer sous"
+    ID_FILE_PAGE_SETUP      "Modifie les options d'impression\nMise en page"
+    ID_FILE_PRINT_SETUP     "Modifie les options d'impression et celles de l'imprimante\nConfiguration de l'impression"
+    ID_FILE_PRINT           "Imprime le document actif\nImprimer"
+    ID_FILE_PRINT_PREVIEW   "Affiche les pages entières\nAperçu avant impression"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Affiche des informations concernant le programme, le numéro de version et le copyright\nÀ propos de"
+    ID_APP_EXIT             "Quitte l'application et demande si les documents doivent être enregistrés\nQuitter"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Ouvrir ce document"
+    ID_FILE_MRU_FILE2       "Ouvrir ce document"
+    ID_FILE_MRU_FILE3       "Ouvrir ce document"
+    ID_FILE_MRU_FILE4       "Ouvrir ce document"
+    ID_FILE_MRU_FILE5       "Ouvrir ce document"
+    ID_FILE_MRU_FILE6       "Ouvrir ce document"
+    ID_FILE_MRU_FILE7       "Ouvrir ce document"
+    ID_FILE_MRU_FILE8       "Ouvrir ce document"
+    ID_FILE_MRU_FILE9       "Ouvrir ce document"
+    ID_FILE_MRU_FILE10      "Ouvrir ce document"
+    ID_FILE_MRU_FILE11      "Ouvrir ce document"
+    ID_FILE_MRU_FILE12      "Ouvrir ce document"
+    ID_FILE_MRU_FILE13      "Ouvrir ce document"
+    ID_FILE_MRU_FILE14      "Ouvrir ce document"
+    ID_FILE_MRU_FILE15      "Ouvrir ce document"
+    ID_FILE_MRU_FILE16      "Ouvrir ce document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Bascule vers le volet de fenêtre suivant\nVolet suivant"
+    ID_PREV_PANE            "Bascule vers le volet de fenêtre précédent\nVolet précédent"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Fractionne la fenêtre active en volets\nFractionner"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Efface la sélection\nEffacer"
+    ID_EDIT_CLEAR_ALL       "Efface tout\nEffacer tout"
+    ID_EDIT_COPY            "Copie la sélection et la place dans le Presse-papiers\nCopier"
+    ID_EDIT_CUT             "Coupe la sélection et la place dans le Presse-papiers\nCouper"
+    ID_EDIT_FIND            "Recherche le texte spécifié\nRechercher"
+    ID_EDIT_PASTE           "Insère le contenu du presse-papiers\nColler"
+    ID_EDIT_REPEAT          "Répète la dernière action\nRépéter"
+    ID_EDIT_REPLACE         "Remplace un texte spécifié par un texte différent\nRemplacer"
+    ID_EDIT_SELECT_ALL      "Sélectionne la totalité du document\nSélectionner tout"
+    ID_EDIT_UNDO            "Annule la dernière action\nAnnuler"
+    ID_EDIT_REDO            "Rétablit l'action précédemment annulée\nRétablir"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Affiche ou masque la barre d'outils\nActiver/Désactiver Barre d'outils"
+    ID_VIEW_STATUS_BAR      "Affiche ou masque la barre d'état\nActiver/Désactiver Barre d'état"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Modifie la taille de la fenêtre"
+    AFX_IDS_SCMOVE          "Modifie la position de la fenêtre"
+    AFX_IDS_SCMINIMIZE      "Affiche la fenêtre sous forme d'icône"
+    AFX_IDS_SCMAXIMIZE      "Affiche la fenêtre en plein écran"
+    AFX_IDS_SCNEXTWINDOW    "Bascule vers la fenêtre de document suivante"
+    AFX_IDS_SCPREVWINDOW    "Bascule vers la fenêtre de document précédente"
+    AFX_IDS_SCCLOSE         "Ferme la fenêtre active et demande si les documents doivent être enregistrés"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restaure la fenêtre à sa taille normale"
+    AFX_IDS_SCTASKLIST      "Active la liste des tâches"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Ferme le mode Aperçu avant l'impression\nAnnuler aperçu"
+END
+
+#endif    // Français (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+LANGUAGE 12, 1
+#pragma code_page(1252)
+#include "res\DeathEditor.rc2"  // ressources non modifiées par Microsoft Visual C++
+#include "afxres.rc"         // Composants standard
+#include "afxprint.rc"       // ressources impression/aperçu avant impression
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

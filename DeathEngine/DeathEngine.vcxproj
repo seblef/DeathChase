@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dev|Win32">
+      <Configuration>Dev</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ExportDev|Win32">
+      <Configuration>ExportDev</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Export|Win32">
+      <Configuration>Export</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7458BE1E-BE1E-4ACC-BDC0-C512466A755E}</ProjectGuid>
+    <RootNamespace>DeathEngine</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ExportDev|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Export|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ExportDev|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Export|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Dev|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Exec\</OutDir>
+    <IntDir>.\ObjD\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Exec\</OutDir>
+    <IntDir>.\ObjR\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|Win32'">
+    <OutDir>.\Exec\</OutDir>
+    <IntDir>.\ObjDev\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\SDK\DirectX;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Export|Win32'">
+    <OutDir>.\Exec\</OutDir>
+    <IntDir>.\ObjExp\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ExportDev|Win32'">
+    <OutDir>.\Exec\</OutDir>
+    <IntDir>.\ObjExpDev\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/wd4996 /DDEDEBUG %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)DeathChaseD.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/wd4996 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat />
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)DeathChase.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dev|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/wd4996 /DDEDEBUG /DDEDEV %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)DeathChaseDev.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Export|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/wd4996 /DDEEXPORT %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat />
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)DEngine.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ExportDev|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/wd4996 /DDEDEBUG /DDEDEV /DDEEXPORT %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)DEngineDev.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\BMPImage.cpp" />
+    <ClCompile Include="ColDet\box.cpp" />
+    <ClCompile Include="ColDet\box_bld.cpp" />
+    <ClCompile Include="GUI\Button.cpp" />
+    <ClCompile Include="Core\BVolumes.cpp" />
+    <ClCompile Include="Core\Camera.cpp" />
+    <ClCompile Include="GUI\CheckBox.cpp" />
+    <ClCompile Include="ColDet\coldet.cpp" />
+    <ClCompile Include="ColDet\coldet_bld.cpp" />
+    <ClCompile Include="Game\CollisionMgr.cpp" />
+    <ClCompile Include="Core\ColorConverter.cpp" />
+    <ClCompile Include="GUI\ColorDialog.cpp" />
+    <ClCompile Include="GUI\ComboBox.cpp" />
+    <ClCompile Include="Core\Config.cpp" />
+    <ClCompile Include="Dev\Console.cpp" />
+    <ClCompile Include="GUI\ConsoleList.cpp" />
+    <ClCompile Include="GUI\ContextMenu.cpp" />
+    <ClCompile Include="GUI\CSpriteBank.cpp" />
+    <ClCompile Include="Core\CursorMgr.cpp" />
+    <ClCompile Include="Dev\DevTask.cpp" />
+    <ClCompile Include="GUI\Dialog.cpp" />
+    <ClCompile Include="Core\EdgeSet.cpp" />
+    <ClCompile Include="GUI\EditBox.cpp" />
+    <ClCompile Include="Export\Engine.cpp" />
+    <ClCompile Include="GUI\Environment.cpp" />
+    <ClCompile Include="Game\Explosion.cpp" />
+    <ClCompile Include="Game\ExplosionFactory.cpp" />
+    <ClCompile Include="Export\Factory.cpp" />
+    <ClCompile Include="GUI\FileDialog.cpp" />
+    <ClCompile Include="Core\FileList.cpp" />
+    <ClCompile Include="Core\FileSystem.cpp" />
+    <ClCompile Include="GUI\Font.cpp" />
+    <ClCompile Include="Game\GameCamera.cpp" />
+    <ClCompile Include="Game\GameState.cpp" />
+    <ClCompile Include="GameTest.cpp" />
+    <ClCompile Include="GUI\GUITask.cpp" />
+    <ClCompile Include="Game\Heightmap.cpp" />
+    <ClCompile Include="Game\HeightmapTexCoords.cpp" />
+    <ClCompile Include="Game\HeightmapVertexBuffer.cpp" />
+    <ClCompile Include="GUI\IElement.cpp" />
+    <ClCompile Include="GUI\Image.cpp" />
+    <ClCompile Include="GUI\ImageFileDialog.cpp" />
+    <ClCompile Include="GUI\InOutFader.cpp" />
+    <ClCompile Include="Core\Input.cpp" />
+    <ClCompile Include="Game\IObject.cpp" />
+    <ClCompile Include="Core\Kernel.cpp" />
+    <ClCompile Include="GUI\KeyButton.cpp" />
+    <ClCompile Include="GUI\ListBox.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MainApp.cpp" />
+    <ClCompile Include="Game\Map.cpp" />
+    <ClCompile Include="Game\MapObject.cpp" />
+    <ClCompile Include="Game\MapObjectFactory.cpp" />
+    <ClCompile Include="Core\Material.cpp" />
+    <ClCompile Include="Core\MaterialMgr.cpp" />
+    <ClCompile Include="ColDet\math3d.cpp" />
+    <ClCompile Include="Core\MathStatic.cpp" />
+    <ClCompile Include="Dev\MemDebugger.cpp" />
+    <ClCompile Include="Dev\MemoryApp.cpp" />
+    <ClCompile Include="GUI\Menu.cpp" />
+    <ClCompile Include="Menu\MenuMain.cpp" />
+    <ClCompile Include="Menu\MenuOptions.cpp" />
+    <ClCompile Include="Menu\MenuOptionsDlg.cpp" />
+    <ClCompile Include="Menu\MenuSolo.cpp" />
+    <ClCompile Include="Menu\MenuTask.cpp" />
+    <ClCompile Include="Core\Mesh.cpp" />
+    <ClCompile Include="Core\MeshMgr.cpp" />
+    <ClCompile Include="Game\MeshObject.cpp" />
+    <ClCompile Include="GUI\MessageBox.cpp" />
+    <ClCompile Include="GUI\ModalScreen.cpp" />
+    <ClCompile Include="GUI\MultiListBox.cpp" />
+    <ClCompile Include="ColDet\mytritri.cpp" />
+    <ClCompile Include="Game\ObjectMap.cpp" />
+    <ClCompile Include="Game\Octree.cpp" />
+    <ClCompile Include="Core\Particle.cpp" />
+    <ClCompile Include="Core\ParticleEmitterStd.cpp" />
+    <ClCompile Include="Core\ParticleEngine.cpp" />
+    <ClCompile Include="Core\ParticleRendererStd.cpp" />
+    <ClCompile Include="Core\ParticleSystem.cpp" />
+    <ClCompile Include="Game\Patch.cpp" />
+    <ClCompile Include="Game\PatchGrid.cpp" />
+    <ClCompile Include="Game\PatchSide.cpp" />
+    <ClCompile Include="Game\PlayerShipController.cpp" />
+    <ClCompile Include="Core\Renderer.cpp" />
+    <ClCompile Include="Core\Renderer2D.cpp" />
+    <ClCompile Include="Game\RenderingQueue.cpp" />
+    <ClCompile Include="Core\ScriptFile.cpp" />
+    <ClCompile Include="GUI\ScrollBar.cpp" />
+    <ClCompile Include="Core\Shader.cpp" />
+    <ClCompile Include="Core\ShaderMgr.cpp" />
+    <ClCompile Include="Core\ShadowVolume.cpp" />
+    <ClCompile Include="Game\Shield.cpp" />
+    <ClCompile Include="GUI\Skin.cpp" />
+    <ClCompile Include="Game\SkyBox.cpp" />
+    <ClCompile Include="Core\Sound.cpp" />
+    <ClCompile Include="Core\SoundBufferDynamic.cpp" />
+    <ClCompile Include="Core\SoundBufferStatic.cpp" />
+    <ClCompile Include="Core\SoundListener.cpp" />
+    <ClCompile Include="Core\SoundSource.cpp" />
+    <ClCompile Include="Core\SoundVirtualSource.cpp" />
+    <ClCompile Include="Game\SpaceShip.cpp" />
+    <ClCompile Include="GUI\SpinBox.cpp" />
+    <ClCompile Include="GUI\StaticText.cpp" />
+    <ClCompile Include="Game\Sun.cpp" />
+    <ClCompile Include="ColDet\sysdep.cpp" />
+    <ClCompile Include="GUI\TabControl.cpp" />
+    <ClCompile Include="Core\TaskList.cpp" />
+    <ClCompile Include="Core\TextOutput.cpp" />
+    <ClCompile Include="Core\Texture.cpp" />
+    <ClCompile Include="Core\TextureMgr.cpp" />
+    <ClCompile Include="Core\Timer.cpp" />
+    <ClCompile Include="GUI\ToolBar.cpp" />
+    <ClCompile Include="Core\Transformation.cpp" />
+    <ClCompile Include="Game\TreeGenerator.cpp" />
+    <ClCompile Include="Game\TriNodeMgr.cpp" />
+    <ClCompile Include="ColDet\tritri.c" />
+    <ClCompile Include="Game\Variance.cpp" />
+    <ClCompile Include="Core\ViewFrustrum.cpp" />
+    <ClCompile Include="Game\Water.cpp" />
+    <ClCompile Include="Game\WaterSurround.cpp" />
+    <ClCompile Include="GUI\Window.cpp" />
+    <ClCompile Include="Core\WindowApp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game\Ammo.h" />
+    <ClInclude Include="Core\BBox.h" />
+    <ClInclude Include="Core\BMPImage.h" />
+    <ClInclude Include="ColDet\box.h" />
+    <ClInclude Include="Core\BSphere.h" />
+    <ClInclude Include="GUI\Button.h" />
+    <ClInclude Include="Core\Camera.h" />
+    <ClInclude Include="GUI\CheckBox.h" />
+    <ClInclude Include="ColDet\coldet.h" />
+    <ClInclude Include="ColDet\coldetimpl.h" />
+    <ClInclude Include="Game\CollisionMgr.h" />
+    <ClInclude Include="Core\Color.h" />
+    <ClInclude Include="Core\ColorConverter.h" />
+    <ClInclude Include="GUI\ColorDialog.h" />
+    <ClInclude Include="GUI\ComboBox.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="Core\Config.h" />
+    <ClInclude Include="Dev\Console.h" />
+    <ClInclude Include="GUI\ConsoleList.h" />
+    <ClInclude Include="GUI\ContextMenu.h" />
+    <ClInclude Include="ConvertChar.h" />
+    <ClInclude Include="GUI\CSpriteBank.h" />
+    <ClInclude Include="Core\CursorMgr.h" />
+    <ClInclude Include="Dev\DevTask.h" />
+    <ClInclude Include="GUI\Dialog.h" />
+    <ClInclude Include="Dirs.h" />
+    <ClInclude Include="Core\EdgeSet.h" />
+    <ClInclude Include="GUI\EditBox.h" />
+    <ClInclude Include="GUI\ElementTypes.h" />
+    <ClInclude Include="Export\Engine.h" />
+    <ClInclude Include="GUI\Environment.h" />
+    <ClInclude Include="Game\Explosion.h" />
+    <ClInclude Include="Game\ExplosionFactory.h" />
+    <ClInclude Include="Game\ExplosionTemplate.h" />
+    <ClInclude Include="Export\Factory.h" />
+    <ClInclude Include="GUI\FileDialog.h" />
+    <ClInclude Include="Core\FileList.h" />
+    <ClInclude Include="Core\FileSystem.h" />
+    <ClInclude Include="GUI\Font.h" />
+    <ClInclude Include="Game\GameCamera.h" />
+    <ClInclude Include="Game\GameEvent.h" />
+    <ClInclude Include="Game\GameState.h" />
+    <ClInclude Include="GameTest.h" />
+    <ClInclude Include="GUI\GUITask.h" />
+    <ClInclude Include="Core\Handles.h" />
+    <ClInclude Include="Game\Heightmap.h" />
+    <ClInclude Include="Game\HeightmapTexCoords.h" />
+    <ClInclude Include="Game\HeightmapVertexBuffer.h" />
+    <ClInclude Include="export\IBMPImage.h" />
+    <ClInclude Include="GUI\IButton.h" />
+    <ClInclude Include="export\ICamera.h" />
+    <ClInclude Include="GUI\ICheckBox.h" />
+    <ClInclude Include="GUI\IColorDialog.h" />
+    <ClInclude Include="GUI\IComboBox.h" />
+    <ClInclude Include="export\IConfig.h" />
+    <ClInclude Include="GUI\IContextMenu.h" />
+    <ClInclude Include="GUI\IEditBox.h" />
+    <ClInclude Include="GUI\IElement.h" />
+    <ClInclude Include="Export\IEngine.h" />
+    <ClInclude Include="GUI\IEnvironment.h" />
+    <ClInclude Include="GUI\IEventReceiver.h" />
+    <ClInclude Include="Export\IExportObj.h" />
+    <ClInclude Include="Export\IFactory.h" />
+    <ClInclude Include="GUI\IFileDialog.h" />
+    <ClInclude Include="GUI\IFont.h" />
+    <ClInclude Include="Game\IGameEventReceiver.h" />
+    <ClInclude Include="Export\IHeightmap.h" />
+    <ClInclude Include="GUI\IImage.h" />
+    <ClInclude Include="GUI\IInOutFader.h" />
+    <ClInclude Include="GUI\IKeyButton.h" />
+    <ClInclude Include="GUI\IListBox.h" />
+    <ClInclude Include="GUI\Image.h" />
+    <ClInclude Include="GUI\ImageFileDialog.h" />
+    <ClInclude Include="Export\IMap.h" />
+    <ClInclude Include="Export\IMapObject.h" />
+    <ClInclude Include="Game\IMapObject.h" />
+    <ClInclude Include="Export\IMapObjectFactory.h" />
+    <ClInclude Include="Export\IMaterial.h" />
+    <ClInclude Include="Export\IMaterialMgr.h" />
+    <ClInclude Include="Export\IMemAllocMgr.h" />
+    <ClInclude Include="Export\IMemDebugger.h" />
+    <ClInclude Include="Dev\IMemoryAllocator.h" />
+    <ClInclude Include="Export\IMesh.h" />
+    <ClInclude Include="Export\IMeshMgr.h" />
+    <ClInclude Include="Export\IMeshObject.h" />
+    <ClInclude Include="GUI\IMultiListBox.h" />
+    <ClInclude Include="GUI\InOutFader.h" />
+    <ClInclude Include="Core\Input.h" />
+    <ClInclude Include="Game\IObject.h" />
+    <ClInclude Include="Export\IObjectMap.h" />
+    <ClInclude Include="Core\IParticleEmitter.h" />
+    <ClInclude Include="Core\IParticleRenderer.h" />
+    <ClInclude Include="Export\IPatchGrid.h" />
+    <ClInclude Include="Core\IReferenceCounter.h" />
+    <ClInclude Include="export\IRenderer.h" />
+    <ClInclude Include="Export\IRenderer2D.h" />
+    <ClInclude Include="Core\IResource.h" />
+    <ClInclude Include="Menu\IScreenMenu.h" />
+    <ClInclude Include="export\IScriptFile.h" />
+    <ClInclude Include="GUI\IScrollBar.h" />
+    <ClInclude Include="export\IShader.h" />
+    <ClInclude Include="export\IShaderMgr.h" />
+    <ClInclude Include="Export\IShield.h" />
+    <ClInclude Include="GUI\ISkin.h" />
+    <ClInclude Include="Export\ISkyBox.h" />
+    <ClInclude Include="Core\ISoundBuffer.h" />
+    <ClInclude Include="Export\ISpaceShip.h" />
+    <ClInclude Include="Game\ISpaceShipController.h" />
+    <ClInclude Include="GUI\ISpinBox.h" />
+    <ClInclude Include="GUI\ISpriteBank.h" />
+    <ClInclude Include="GUI\IStaticText.h" />
+    <ClInclude Include="Export\ISun.h" />
+    <ClInclude Include="GUI\ITabControl.h" />
+    <ClInclude Include="Core\ITask.h" />
+    <ClInclude Include="export\ITextOutput.h" />
+    <ClInclude Include="export\ITextureMgr.h" />
+    <ClInclude Include="GUI\IToolBar.h" />
+    <ClInclude Include="Export\ITreeGenerator.h" />
+    <ClInclude Include="export\IViewFrustrum.h" />
+    <ClInclude Include="Export\IWater.h" />
+    <ClInclude Include="Game\IWeaponTrajectory.h" />
+    <ClInclude Include="GUI\IWindow.h" />
+    <ClInclude Include="Core\Kernel.h" />
+    <ClInclude Include="GUI\KeyButton.h" />
+    <ClInclude Include="GUI\ListBox.h" />
+    <ClInclude Include="MainApp.h" />
+    <ClInclude Include="Game\Map.h" />
+    <ClInclude Include="Game\MapObjectDefs.h" />
+    <ClInclude Include="Game\MapObjectFactory.h" />
+    <ClInclude Include="Core\Material.h" />
+    <ClInclude Include="Core\MaterialInstance.h" />
+    <ClInclude Include="Core\MaterialMgr.h" />
+    <ClInclude Include="ColDet\math3d.h" />
+    <ClInclude Include="Core\Matrix.h" />
+    <ClInclude Include="Dev\MemAllocMgr.h" />
+    <ClInclude Include="Dev\MemDebugger.h" />
+    <ClInclude Include="Dev\MemoryApp.h" />
+    <ClInclude Include="GUI\Menu.h" />
+    <ClInclude Include="Menu\MenuMain.h" />
+    <ClInclude Include="Menu\MenuOptions.h" />
+    <ClInclude Include="Menu\MenuOptionsDlg.h" />
+    <ClInclude Include="Menu\MenuSolo.h" />
+    <ClInclude Include="Menu\MenuTask.h" />
+    <ClInclude Include="Core\Mesh.h" />
+    <ClInclude Include="Core\MeshMgr.h" />
+    <ClInclude Include="Game\MeshObject.h" />
+    <ClInclude Include="GUI\MessageBox.h" />
+    <ClInclude Include="GUI\ModalScreen.h" />
+    <ClInclude Include="GUI\MultiListBox.h" />
+    <ClInclude Include="MyAssert.h" />
+    <ClInclude Include="ColDet\mytritri.h" />
+    <ClInclude Include="Game\ObjectMap.h" />
+    <ClInclude Include="Game\ObjectTypes.h" />
+    <ClInclude Include="Game\Octree.h" />
+    <ClInclude Include="Core\Particle.h" />
+    <ClInclude Include="Core\ParticleEmitterStd.h" />
+    <ClInclude Include="Core\ParticleEngine.h" />
+    <ClInclude Include="Core\ParticleRendererStd.h" />
+    <ClInclude Include="Core\ParticleSystem.h" />
+    <ClInclude Include="Core\ParticleSystemTemplate.h" />
+    <ClInclude Include="Game\Patch.h" />
+    <ClInclude Include="Game\PatchGrid.h" />
+    <ClInclude Include="Game\PatchSide.h" />
+    <ClInclude Include="Core\Plane.h" />
+    <ClInclude Include="Game\PlayerShipController.h" />
+    <ClInclude Include="Core\Quaternion.h" />
+    <ClInclude Include="Core\Rect.h" />
+    <ClInclude Include="Core\Renderer.h" />
+    <ClInclude Include="Core\Renderer2D.h" />
+    <ClInclude Include="Core\RenderingCommandBlock.h" />
+    <ClInclude Include="Core\RenderingOp.h" />
+    <ClInclude Include="Core\RenderingPassDefs.h" />
+    <ClInclude Include="Game\RenderingQueue.h" />
+    <ClInclude Include="Core\ScriptFile.h" />
+    <ClInclude Include="GUI\ScrollBar.h" />
+    <ClInclude Include="Core\Shader.h" />
+    <ClInclude Include="Core\ShaderMgr.h" />
+    <ClInclude Include="Exec\Materials\Shaders\ShadersDefs.h" />
+    <ClInclude Include="Core\ShadowVolume.h" />
+    <ClInclude Include="Game\Shield.h" />
+    <ClInclude Include="GUI\Skin.h" />
+    <ClInclude Include="Game\SkyBox.h" />
+    <ClInclude Include="Core\Sound.h" />
+    <ClInclude Include="Core\SoundBufferDynamic.h" />
+    <ClInclude Include="Core\SoundBufferStatic.h" />
+    <ClInclude Include="Core\SoundListener.h" />
+    <ClInclude Include="Core\SoundPlayingSource.h" />
+    <ClInclude Include="Core\SoundSource.h" />
+    <ClInclude Include="Core\SoundVirtualSource.h" />
+    <ClInclude Include="Game\SpaceShip.h" />
+    <ClInclude Include="GUI\SpinBox.h" />
+    <ClInclude Include="GUI\StaticText.h" />
+    <ClInclude Include="Game\Sun.h" />
+    <ClInclude Include="ColDet\sysdep.h" />
+    <ClInclude Include="GUI\TabControl.h" />
+    <ClInclude Include="Core\TAllocatorPtr.h" />
+    <ClInclude Include="Core\TaskList.h" />
+    <ClInclude Include="Core\TDynamicTab.h" />
+    <ClInclude Include="Core\TextOutput.h" />
+    <ClInclude Include="Core\Texture.h" />
+    <ClInclude Include="Core\TextureMgr.h" />
+    <ClInclude Include="Core\THandleMgr.h" />
+    <ClInclude Include="Core\THierarchy.h" />
+    <ClInclude Include="Core\Timer.h" />
+    <ClInclude Include="Core\TMap.h" />
+    <ClInclude Include="Core\TMemoryAllocator.h" />
+    <ClInclude Include="GUI\ToolBar.h" />
+    <ClInclude Include="Core\Transformation.h" />
+    <ClInclude Include="Game\TreeDefs.h" />
+    <ClInclude Include="Game\TreeGenerator.h" />
+    <ClInclude Include="Game\TriNodeMgr.h" />
+    <ClInclude Include="Core\TSingleton.h" />
+    <ClInclude Include="Game\Variance.h" />
+    <ClInclude Include="Core\Vector.h" />
+    <ClInclude Include="Core\Vertex.h" />
+    <ClInclude Include="Core\ViewFrustrum.h" />
+    <ClInclude Include="Game\Water.h" />
+    <ClInclude Include="Game\WaterSurround.h" />
+    <ClInclude Include="Game\WeaponTemplate.h" />
+    <ClInclude Include="GUI\Window.h" />
+    <ClInclude Include="Core\WindowApp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Exec\GUI\Templates\console.tdlg" />
+    <None Include="Exec\GUI\Templates\memory.tdlg" />
+    <None Include="Exec\GUI\Templates\options.tdlg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\SDK\OpenAL\alut.lib" />
+    <Library Include="..\SDK\DirectX\d3d9.lib" />
+    <Library Include="..\SDK\DirectX\d3dx9.lib" />
+    <Library Include="..\SDK\DirectX\d3dx9d.lib" />
+    <Library Include="..\SDK\DirectX\d3dxof.lib" />
+    <Library Include="..\SDK\DirectX\dinput.lib" />
+    <Library Include="..\SDK\DirectX\dinput8.lib" />
+    <Library Include="..\SDK\DirectX\DxErr.lib" />
+    <Library Include="..\SDK\DirectX\dxguid.lib" />
+    <Library Include="..\SDK\OpenAL\EFX-Util.lib" />
+    <Library Include="..\SDK\Win\Gdi32.Lib" />
+    <Library Include="..\SDK\OpenAL\ogg.lib" />
+    <Library Include="..\SDK\OpenAL\OpenAL32.lib" />
+    <Library Include="..\SDK\Win\User32.Lib" />
+    <Library Include="..\SDK\OpenAL\vorbis.lib" />
+    <Library Include="..\SDK\OpenAL\vorbisfile.lib" />
+    <Library Include="..\SDK\Win\WinMM.Lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="\DeathChase\DeathEngine\DeathEditor\DeathEditor.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

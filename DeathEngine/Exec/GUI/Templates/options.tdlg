@@ -1,0 +1,221 @@
+dialog 30 30 410 280 Options
+{
+  button 365 255 40 20
+  {
+    id 1002
+    text "Annuler"
+  }
+
+  button 320 255 40 20
+  {
+    id 1003
+    text "Valider"
+  }
+
+-- *************************** Controles des options video *******************************
+
+  statictext 10 45 150 15
+  {
+    id 1004
+    text "Résolution :"
+  }
+
+  statictext 10 90 150 15
+  {
+    id 1005
+    text "Antialiasing :"
+  }
+
+  statictext 10 135 150 15
+  {
+    id 1006
+    text "Filtrage :"
+  }
+
+  statictext 200 45 150 15
+  {
+    id 1007
+    text "Détails des shaders :"
+  }
+
+  statictext 200 90 150 15
+  {
+    id 1008
+    text "Détails du terrain :"
+  }
+
+  statictext 200 135 150 15
+  {
+    id 1009
+    text "Détails des objets :"
+  }
+
+  checkbox 10 225 150 20
+  {
+    id 1010
+    text "Ombres dynamiques"
+  }
+
+  checkbox 200 225 150 20
+  {
+    id 1017
+    text "Mode fenêtré"
+  }
+
+  -- resolution
+  combobox 10 65 150 20
+  {
+    id 1011
+  }
+
+  -- antialias
+  combobox 10 110 150 20
+  {
+    id 1012
+  }
+
+  -- anisotrop
+  combobox 10 155 150 20
+  {
+    id 1013
+  }
+
+  -- shaders
+  combobox 200 65 150 20
+  {
+    id 1014
+  }
+
+  -- details terrain
+  combobox 200 110 150 20
+  {
+    id 1015
+
+    items
+    {
+      "Faibles"
+      "Moyens"
+      "Elevés"
+    }
+  }
+
+  -- details obj
+  combobox 200 155 150 20
+  {
+    id 1016
+ 
+    items
+    {
+      "Faibles"
+      "Moyens"
+      "Elevés"
+    }
+  }
+
+-- ***************************** Controles commandes ********************************************
+
+  statictext 100 45 100 20
+  {
+    id 1020
+    text "Droite"
+    textalign lowerright center
+  }
+
+  statictext 100 75 100 20
+  {
+    id 1021
+    text "Gauche"
+    textalign lowerright center
+  }
+
+  statictext 100 105 100 20
+  {
+    id 1022
+    text "Regader derrière"
+    textalign lowerright center
+  }
+
+  statictext 100 135 100 20
+  {
+    id 1023
+    text "Tir principal"
+    textalign lowerright center
+  }
+
+  statictext 100 165 100 20
+  {
+    id 1024
+    text "Tir secondaire"
+    textalign lowerright center
+  }
+
+  statictext 100 195 100 20
+  {
+    id 1025
+    text "Défense"
+    textalign lowerright center
+  }
+
+  statictext 100 225 100 20
+  {
+    id 1026
+    text "Bonus"
+    textalign lowerright center
+  }
+
+  -- droite
+  keybutton 210 45 50 20
+  {
+    id 1027
+  }
+
+  -- gauche
+  keybutton 210 75 50 20
+  {
+    id 1028
+  }
+
+  -- vue arriere
+  keybutton 210 105 50 20
+  {
+   id 1029
+  }
+
+  -- tir principal
+  keybutton 210 135 50 20
+  {
+    id 1030
+  }
+
+  -- tir secondaire
+  keybutton 210 165 50 20
+  {
+    id 1031
+  }
+
+  -- defense
+  keybutton 210 195 50 20
+  {
+    id 1032
+  }
+
+  -- bonus
+  keybutton 210 225 50 20
+  {
+    id 1033
+  }
+
+-- ************************** Tab ***********************************
+
+  tab 5 20 400 230
+  {
+    id 1099
+
+    tabs
+    {
+      "Vidéo"
+      "Touches"
+    }
+  }
+
+}

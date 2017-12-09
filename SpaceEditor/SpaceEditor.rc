@@ -1,0 +1,486 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Français (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+    "LANGUAGE 12, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\SpaceEditor.rc2""  // ressources non modifiées par Microsoft Visual C++\r\n"
+    "#include ""afxres.rc""         // Composants standard\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SpaceEditor.ico"
+IDR_DCSpaceShipTYPE     ICON                    "res\\SpaceEditorDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "Fichier"
+    BEGIN
+        MENUITEM "Nouveau vaisseau",            ID_FICHIER_NOUVEAUVAISSEAU
+        MENUITEM "Ouvrir vaisseau",             ID_FICHIER_OUVRIRVAISSEAU
+        MENUITEM SEPARATOR
+        MENUITEM "Sauvegarder",                 ID_FICHIER_SAUVEGARDER
+        MENUITEM SEPARATOR
+        MENUITEM "Quitter",                     ID_FICHIER_QUITTER
+    END
+    POPUP "Vue"
+    BEGIN
+        MENUITEM "Perspective",                 ID_VUE_PERSPECTIVE, CHECKED
+        MENUITEM "Dessus",                      ID_VUE_DESSUS, CHECKED
+        MENUITEM "Dessous",                     ID_VUE_DESSOUS, CHECKED
+        MENUITEM "Face",                        ID_VUE_FACE, CHECKED
+        MENUITEM "Arrière",                     ID_VUE_ARRIERE, CHECKED
+        MENUITEM "Gauche",                      ID_VUE_GAUCHE, CHECKED
+        MENUITEM "Droite",                      ID_VUE_DROITE, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "Zoom",                        ID_VUE_ZOOM, CHECKED
+        MENUITEM "Tourner",                     ID_VUE_TOURNER, CHECKED
+        MENUITEM "Déplacer",                    ID_VUE_DEPLACER, CHECKED
+        MENUITEM "Profondeur",                  ID_VUE_PROFONDEUR, CHECKED
+    END
+    POPUP "Outils"
+    BEGIN
+        MENUITEM "Selection",                   ID_OUTILS_SELECTION, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "Déplacer",                    ID_OUTILS_DEPLACER, CHECKED
+        MENUITEM "Tourner",                     ID_OUTILS_TOURNER, CHECKED
+        MENUITEM "Echelle",                     ID_OUTILS_ECHELLE, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "Verrouiller sur X",           ID_OUTILS_VERROUILLERSURX, CHECKED
+        MENUITEM "Verrouiller sur Y",           ID_OUTILS_VERROUILLERSURY, CHECKED
+        MENUITEM "Verrouiller sur Z",           ID_OUTILS_VERROUILLERSURZ, CHECKED
+    END
+    POPUP "Test"
+    BEGIN
+        MENUITEM "Tester",                      ID_TEST_TESTER
+    END
+END
+
+IDR_VIEWCONTEXT MENU 
+BEGIN
+    POPUP " "
+    BEGIN
+        POPUP "Vue"
+        BEGIN
+            MENUITEM "Perspective",                 ID_VUE_PERSPECTIVE
+            MENUITEM "Dessus",                      ID_VUE_DESSUS
+            MENUITEM "Dessous",                     ID_VUE_DESSOUS
+            MENUITEM "Face",                        ID_VUE_FACE
+            MENUITEM "Arrière",                     ID_VUE_ARRIERE
+            MENUITEM "Gauche",                      ID_VUE_GAUCHE
+            MENUITEM "Droite",                      ID_VUE_DROITE
+            MENUITEM SEPARATOR
+            MENUITEM "Centrer",                     ID_VUE_CENTER
+            MENUITEM SEPARATOR
+            MENUITEM "Zoom",                        ID_VUE_ZOOM
+            MENUITEM "Tourner",                     ID_VUE_TOURNER
+            MENUITEM "Déplacer",                    ID_VUE_DEPLACER
+            MENUITEM "Profondeur",                  ID_VUE_PROFONDEUR
+        END
+        POPUP "Outils"
+        BEGIN
+            MENUITEM "Selection",                   ID_OUTILS_SELECTION
+            MENUITEM SEPARATOR
+            MENUITEM "Déplacer",                    ID_OUTILS_DEPLACER
+            MENUITEM "Tourner",                     ID_OUTILS_TOURNER
+            MENUITEM "Echelle",                     ID_OUTILS_ECHELLE
+            MENUITEM SEPARATOR
+            MENUITEM "Verrouiller sur X",           ID_OUTILS_VERROUILLERSURX
+            MENUITEM "Verrouiller sur Y",           ID_OUTILS_VERROUILLERSURY
+            MENUITEM "Verrouiller sur Z",           ID_OUTILS_VERROUILLERSURZ
+        END
+        POPUP "Options"
+        BEGIN
+            MENUITEM "Eclairage",                   ID_OPTIONS_ECLAIRAGE
+        END
+        MENUITEM SEPARATOR
+        POPUP "Créer"
+        BEGIN
+            MENUITEM "Point de tir principal",      ID_CREATE_MAINFIRE
+            MENUITEM "Point de tir secondaire",     ID_CREATE_SECFIRE
+            MENUITEM "Point de tir arrière",        ID_CREATE_BACKFIRE
+            MENUITEM "Point de défense",            ID_CREATE_DEFENSE
+            MENUITEM "Point de laché",              ID_CREATE_BOMBDROP
+        END
+    END
+END
+
+IDR_OBJCONTEXT MENU 
+BEGIN
+    POPUP " "
+    BEGIN
+        MENUITEM "Propriétés",                  ID__PROPRI32791
+        MENUITEM "Définir comme LOD",           ID__D32793
+        MENUITEM SEPARATOR
+        MENUITEM "Supprimer",                   ID__SUPPRIMER
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "E",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "P",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "À propos de SpaceEditor"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "SpaceEditor version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_SHIPPROP DIALOGEX 0, 0, 198, 96
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Propriétés"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Nom:",IDC_STATIC,7,8,18,8
+    EDITTEXT        IDC_SHIPPROP_NAME,27,7,136,14,ES_AUTOHSCROLL
+    LTEXT           "Vitesse de déplacement:",IDC_STATIC,7,31,79,8
+    LTEXT           "Vitesse de rotation:",IDC_STATIC,23,48,64,8
+    EDITTEXT        IDC_SHIPPROP_TSPEEDEB,89,28,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SHIPPROP_TSPEEDSB,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,127,28,11,14
+    EDITTEXT        IDC_SHIPPROP_RSPEEDEB,89,46,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SHIPPROP_RSPEEDSB2,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,127,46,11,14
+    LTEXT           "Son du moteur:",IDC_STATIC,7,68,50,8
+    PUSHBUTTON      "<Son>",IDC_SHIPPROP_SOUND,62,66,88,14
+    PUSHBUTTON      "Jouer",IDC_SHIPPROP_PLAYSOUND,151,66,27,14,WS_DISABLED
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040c04e4"
+        BEGIN
+            VALUE "CompanyName", "TODO : <Nom de la société>"
+            VALUE "FileDescription", "TODO : <Description de fichier>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "SpaceEditor.exe"
+            VALUE "LegalCopyright", "TODO : (c) <Nom de la société>. Tous droits réservés."
+            VALUE "OriginalFilename", "SpaceEditor.exe"
+            VALUE "ProductName", "TODO : <Nom du produit>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SHIPPROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 191
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINTOOLBAR TOOLBAR  24, 24
+BEGIN
+    BUTTON      ID_OUTILS_SELECTION
+    SEPARATOR
+    BUTTON      ID_VUE_ZOOM
+    BUTTON      ID_VUE_DEPLACER
+    BUTTON      ID_VUE_TOURNER
+    BUTTON      ID_VUE_PROFONDEUR
+    BUTTON      ID_VUE_CENTRER
+    SEPARATOR
+    BUTTON      ID_OUTILS_DEPLACER
+    BUTTON      ID_OUTILS_TOURNER
+    BUTTON      ID_OUTILS_ECHELLE
+    SEPARATOR
+    BUTTON      ID_OUTILS_VERROUILLERSURX
+    BUTTON      ID_OUTILS_VERROUILLERSURY
+    BUTTON      ID_OUTILS_VERROUILLERSURZ
+    SEPARATOR
+    BUTTON      ID_OUTILS_LIER
+    BUTTON      ID_OUTILS_ALIGNER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINTOOLBAR         BITMAP                  "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_ZOOMCUR             CURSOR                  "res\\Zoom.cur"
+IDC_TRANSLATECUR        CURSOR                  "res\\Translate.cur"
+IDC_SCALECUR            CURSOR                  "res\\Scale.cur"
+IDC_ROTATEECUR          CURSOR                  "res\\Rotate.cur"
+IDC_LINKCUR             CURSOR                  "res\\Link.cur"
+IDC_CAMROTATECUR        CURSOR                  "res\\CamRotate.cur"
+IDC_CAMMOVECUR          CURSOR                  "res\\CamMove.cur"
+IDC_ALIGNCUR            CURSOR                  "res\\Align.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Space Editor\n\nSpaceShip\nDC Space Ship Files (*.dship)\n.dship\nSpaceEditor.Document\nSpaceEditor.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "SpaceEditor"
+    AFX_IDS_IDLEMESSAGE     "Prêt"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "RFP"
+    ID_INDICATOR_REC        "ENR"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Crée un nouveau document\nNouveau"
+    ID_FILE_OPEN            "Ouvre un document existant\nOuvrir"
+    ID_FILE_CLOSE           "Ferme le document actif\nFermer"
+    ID_FILE_SAVE            "Enregistre le document actif\nEnregistrer"
+    ID_FILE_SAVE_AS         "Enregistre le document actif sous un nouveau nom\nEnregistrer sous"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Affiche des informations concernant le programme, le numéro de version et le copyright\nÀ propos de"
+    ID_APP_EXIT             "Quitte l'application et demande si les documents doivent être enregistrés\nQuitter"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Ouvrir ce document"
+    ID_FILE_MRU_FILE2       "Ouvrir ce document"
+    ID_FILE_MRU_FILE3       "Ouvrir ce document"
+    ID_FILE_MRU_FILE4       "Ouvrir ce document"
+    ID_FILE_MRU_FILE5       "Ouvrir ce document"
+    ID_FILE_MRU_FILE6       "Ouvrir ce document"
+    ID_FILE_MRU_FILE7       "Ouvrir ce document"
+    ID_FILE_MRU_FILE8       "Ouvrir ce document"
+    ID_FILE_MRU_FILE9       "Ouvrir ce document"
+    ID_FILE_MRU_FILE10      "Ouvrir ce document"
+    ID_FILE_MRU_FILE11      "Ouvrir ce document"
+    ID_FILE_MRU_FILE12      "Ouvrir ce document"
+    ID_FILE_MRU_FILE13      "Ouvrir ce document"
+    ID_FILE_MRU_FILE14      "Ouvrir ce document"
+    ID_FILE_MRU_FILE15      "Ouvrir ce document"
+    ID_FILE_MRU_FILE16      "Ouvrir ce document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Bascule vers le volet de fenêtre suivant\nVolet suivant"
+    ID_PREV_PANE            "Bascule vers le volet de fenêtre précédent\nVolet précédent"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Fractionne la fenêtre active en volets\nFractionner"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Efface la sélection\nEffacer"
+    ID_EDIT_CLEAR_ALL       "Efface tout\nEffacer tout"
+    ID_EDIT_COPY            "Copie la sélection et la place dans le Presse-papiers\nCopier"
+    ID_EDIT_CUT             "Coupe la sélection et la place dans le Presse-papiers\nCouper"
+    ID_EDIT_FIND            "Recherche le texte spécifié\nRechercher"
+    ID_EDIT_PASTE           "Insère le contenu du presse-papiers\nColler"
+    ID_EDIT_REPEAT          "Répète la dernière action\nRépéter"
+    ID_EDIT_REPLACE         "Remplace un texte spécifié par un texte différent\nRemplacer"
+    ID_EDIT_SELECT_ALL      "Sélectionne la totalité du document\nSélectionner tout"
+    ID_EDIT_UNDO            "Annule la dernière action\nAnnuler"
+    ID_EDIT_REDO            "Rétablit l'action précédemment annulée\nRétablir"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Affiche ou masque la barre d'outils\nActiver/Désactiver Barre d'outils"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Modifie la taille de la fenêtre"
+    AFX_IDS_SCMOVE          "Modifie la position de la fenêtre"
+    AFX_IDS_SCMINIMIZE      "Affiche la fenêtre sous forme d'icône"
+    AFX_IDS_SCMAXIMIZE      "Affiche la fenêtre en plein écran"
+    AFX_IDS_SCNEXTWINDOW    "Bascule vers la fenêtre de document suivante"
+    AFX_IDS_SCPREVWINDOW    "Bascule vers la fenêtre de document précédente"
+    AFX_IDS_SCCLOSE         "Ferme la fenêtre active et demande si les documents doivent être enregistrés"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restaure la fenêtre à sa taille normale"
+    AFX_IDS_SCTASKLIST      "Active la liste des tâches"
+END
+
+#endif    // Français (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+LANGUAGE 12, 1
+#pragma code_page(1252)
+#include "res\SpaceEditor.rc2"  // ressources non modifiées par Microsoft Visual C++
+#include "afxres.rc"         // Composants standard
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

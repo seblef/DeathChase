@@ -1,0 +1,16 @@
+
+-- Death Chase material
+
+material EditorSun
+{
+
+	ambient_shader StdAmbient_NoTex
+	sun_shader StdAmbient_NoTex
+
+
+	diffuse 255 150 150 150
+	specular 255 229 229 229
+	shininess 0.100000
+	emissive 255 0 0 0
+
+}
